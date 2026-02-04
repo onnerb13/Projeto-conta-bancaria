@@ -1,13 +1,39 @@
 import leia from "readline-sync";
 import { Colors } from './src/util/Colors';
+import { Conta } from "./src/model/Conta";
 
 export function main() {
 
     let opcao: number;
 
+    // Instanciar Objetos da Classe Conta
+
+    const c1 = new Conta(1, 1234, "Sofia", 1, 100000.00);
+
+    c1.visualizar();
+
+    // Testes do Método Sacar
+    console.log("Sacar 100,00: ", c1.sacar(100.00));
+    console.log("Sacar 200000.00: ", c1.sacar(200000.00));
+    console.log("Sacar 0.00: ", c1.sacar(0.00));
+
+    // Testes do Método Depositar
+    console.log("Depositar -10.00: ");
+    c1.depositar(-10.00);
+
+    console.log("Depositar 500.00: ");
+    c1.depositar(500.00);
+
+    c1.visualizar();
+
+    // console.log("O Titular da Conta é: ", c1.titular);
+    // console.log("O Saldo da Conta é: ", c1.saldo);
+
+  
+
     while (true) {
 
-        console.log(Colors.bg.black, Colors.fg.yellow, 
+        console.log(Colors.bg.green, Colors.fg.yellow, 
                     "*****************************************************");
         console.log("                                                     ");
         console.log("                BANCO DO BRAZIL COM Z                ");
@@ -92,9 +118,9 @@ export function main() {
 function sobre(): void {
     console.log("\n*****************************************************");
     console.log("Projeto Desenvolvido por: ");
-    console.log("Carlos Brenno da Cunha Teixeira - brennobelmont@gmail.com");
-    console.log("https://github.com/onnerb13/");
-    console.log("*******************************************************");
+    console.log("Rafael Antônio de Queiróz - rafaelproinfo@gmail.com");
+    console.log("github.com/rafaelq80");
+    console.log("*****************************************************");
 }
 
 /* Função de pausa entre as opções do menu */
