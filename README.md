@@ -248,10 +248,10 @@ Este projeto está sob licença **MIT** — livre para uso educacional e profiss
 
 
 
-**Rafael — Desenvolvedor Full Stack & Instrutor**
+**Carlos Brenno — Desenvolvedor Front-end**
 
-🔗 **GitHub:** https://github.com/rafaelq80
+🔗 **GitHub:** 
 
-🔗 **LinkedIn:** https://www.linkedin.com/in/rafaelq80
+🔗 **LinkedIn:** 
 
 Projeto desenvolvido para **aprendizado contínuo**, **demonstração técnica** e **portfólio profissional**.
