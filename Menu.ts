@@ -1,6 +1,7 @@
 import leia from "readline-sync";
 import { Colors } from './src/util/Colors';
 import { Conta } from "./src/model/Conta";
+import { Input } from "./src/util/Input";
 
 export function main() {
 
@@ -55,7 +56,7 @@ export function main() {
         Colors.reset);
 
         console.log("Entre com a opção desejada: ");
-        opcao = leia.questionInt("");
+        opcao = Input.questionInt("");
 
         if (opcao === 0) {
             console.log(Colors.fg.greenstrong, "\nBanco do Brazil com Z - O seu Futuro começa aqui!");
@@ -118,15 +119,15 @@ export function main() {
 function sobre(): void {
     console.log("\n*****************************************************");
     console.log("Projeto Desenvolvido por: ");
-    console.log("Rafael Antônio de Queiróz - rafaelproinfo@gmail.com");
-    console.log("github.com/rafaelq80");
+    console.log("Carlos Brenno da Cunha Teixeira - brennobelmont@gmail.com");
+    console.log("https://github.com/onnerb13");
     console.log("*****************************************************");
 }
 
 /* Função de pausa entre as opções do menu */
 function keyPress(): void {
     console.log(Colors.reset,"\nPressione enter para continuar...");
-    leia.prompt();
+    Input.prompt();
 }
 
 main();
