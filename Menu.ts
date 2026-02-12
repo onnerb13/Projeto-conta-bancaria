@@ -403,8 +403,8 @@ function procurarPorTitular(): void{
 function sobre(): void {
     console.log("\n*****************************************************");
     console.log("Projeto Desenvolvido por: ");
-    console.log("Rafael Antônio de Queiróz - rafaelproinfo@gmail.com");
-    console.log("github.com/rafaelq80");
+    console.log("Carlos Brenno da Cunha Teixeira - brennobelmont@gmail.com");
+    console.log("github.com/onnerb13");
     console.log("*****************************************************");
 }
 
